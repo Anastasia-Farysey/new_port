@@ -1,3 +1,31 @@
+div[class^="grid"] {
+    height: 100px;
+    outline: 1px solid plum;
+    float: left;
+}
+
+.row {
+    width: 100%;
+}
+
+.row div[class^="grid"]:last-child::after {
+    clear: both;
+}
+
+.grid-1{
+    width: 25%;
+}
+.grid-2 {
+    width: 50%;
+}
+.grid-3 {
+    width: 75%;
+}
+.grid-4 {
+    width: 100%;
+}
+
+
 .menu ul {
     padding: 0;
     margin: 0;
