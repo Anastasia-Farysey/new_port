@@ -25,6 +25,9 @@ div[class^="grid"] {
     width: 100%;
 }
 
+.top {
+    height: 50px;
+}
 
 .menu ul {
     padding: 0;
