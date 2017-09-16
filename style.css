@@ -1,46 +1,24 @@
-div[class^="grid"] {
-    height: 100px;
-    outline: 1px solid plum;
-    float: left;
-}
-
-.row {
+body {
     width: 100%;
 }
-
-.row div[class^="grid"]:last-child::after {
-    clear: both;
-}
-
-.grid-1{
-    width: 25%;
-}
-.grid-2 {
-    width: 50%;
-}
-.grid-3 {
-    width: 75%;
-}
-.grid-4 {
-    width: 100%;
-}
-
-.top {
-    height: 50px;
+.top-image {
+    height: 400px;
+    background: lightgreen;
 }
 
 .menu ul {
     padding: 0;
     margin: 0;
     display: table;
-    width: 40%;
+    width: 100%;
 }
 
 .menu li {
     display: table-cell;
-    background: pink;
+    background: #89E589;
     text-align: center;
     position: relative;
+    border: 1px solid white;
 }
 
 .menu ul ul {
@@ -59,11 +37,11 @@ div[class^="grid"] {
 }
 
 .menu ul ul a {
-    background: lightgray;
+    background: #9AD49A;
 }
 
 .menu ul ul a:hover {
-    background: gray;
+    background: #7BA97B;
 }
 
 .menu a {
@@ -76,10 +54,41 @@ div[class^="grid"] {
 }
 
 .menu a:hover {
-    background: red
+    background: #ACECAC;
 }
 
 .menu li:hover ul {
     display: block;
     height: 150px;
+}
+
+.about {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.about-me {
+    width: 50%;
+    height: 300px;
+    background: gray;
+    float: left;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin: 20px;
+}
+
+.photo {
+    width: 30%;
+    height: 300px;
+    float: left;
+    background: gray;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin: 20px;
+}
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
 }
